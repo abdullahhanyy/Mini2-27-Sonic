@@ -69,11 +69,13 @@ public class Captain {
         this.avgRatingScore = avgRatingScore;
     }
 
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
+    }
+
     public List<Trip> getTrips() {
         return trips;
     }
 
-    public void setTrips(List<Trip> trips) {
-        this.trips = trips;
-    }
+
 }
