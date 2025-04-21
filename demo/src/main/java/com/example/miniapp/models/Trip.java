@@ -2,6 +2,7 @@ package com.example.miniapp.models;
 
 import jakarta.persistence.*;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -29,12 +30,14 @@ public class Trip {
     // Default constructor
     public Trip() {}
 
-    // Partial constructor
-    public Trip(LocalDateTime tripDate, String origin, String destination, Double tripCost) {
+    // Partial constructor (without ID)
+    public Trip(LocalDateTime tripDate, String origin, String destination, Double tripCost, Captain captain, Customer customer) {
         this.tripDate = tripDate;
         this.origin = origin;
         this.destination = destination;
         this.tripCost = tripCost;
+        this.captain = captain;
+        this.customer = customer;
     }
 
     // Full constructor
@@ -48,7 +51,7 @@ public class Trip {
         this.customer = customer;
     }
 
-    // Getters and setters
+    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -97,12 +100,11 @@ public class Trip {
         this.captain = captain;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
     public Customer getCustomer() {
         return customer;
     }
 
-
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 }
