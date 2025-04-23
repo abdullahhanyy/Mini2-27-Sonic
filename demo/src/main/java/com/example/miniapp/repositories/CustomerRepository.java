@@ -1,4 +1,4 @@
-ackage com.example.miniapp.repositories;
+package com.example.miniapp.repositories;
 
 import com.example.miniapp.models.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,0 +1,7 @@
+# Class Paths for testing
+# Please change the below paths to the paths of your models (the package name as it will be used in reflection code in the test cases)
+ModelsPath.Captain = demo.src.main.java.com.example.miniapp.models.Captain
+ModelsPath.Customer = demo.src.main.java.com.example.miniapp.models.Customer
+ModelsPath.Payment = demo.src.main.java.com.example.miniapp.models.javaPayment
+ModelsPath.Rating = demo.src.main.java.com.example.miniapp.models.Rating
+ModelsPath.Trip = demo.src.main.java.com.example.miniapp.models.Trip
