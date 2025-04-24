@@ -1,7 +1,7 @@
-package com.example.miniapp.controllers;
+package scalable.mini_projects.Mini_Project2.controllers;
 
-import com.example.miniapp.models.Captain;
-import com.example.miniapp.services.CaptainService;
+import scalable.mini_projects.Mini_Project2.models.Captain;
+import scalable.mini_projects.Mini_Project2.services.CaptainService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

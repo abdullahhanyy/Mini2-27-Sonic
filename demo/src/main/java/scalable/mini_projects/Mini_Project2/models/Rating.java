@@ -1,4 +1,4 @@
-package com.example.miniapp.models;
+package scalable.mini_projects.Mini_Project2.models;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

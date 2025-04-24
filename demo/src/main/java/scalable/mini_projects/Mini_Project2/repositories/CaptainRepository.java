@@ -1,6 +1,6 @@
-package com.example.miniapp.repositories;
+package scalable.mini_projects.Mini_Project2.repositories;
 
-import com.example.miniapp.models.Captain;
+import scalable.mini_projects.Mini_Project2.models.Captain;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

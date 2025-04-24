@@ -1,7 +1,7 @@
-package com.example.miniapp.services;
+package scalable.mini_projects.Mini_Project2.services;
 
-import com.example.miniapp.models.Captain;
-import com.example.miniapp.repositories.CaptainRepository;
+import scalable.mini_projects.Mini_Project2.models.Captain;
+import scalable.mini_projects.Mini_Project2.repositories.CaptainRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

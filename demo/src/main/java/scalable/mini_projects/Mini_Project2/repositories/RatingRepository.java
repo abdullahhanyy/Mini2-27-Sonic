@@ -1,6 +1,6 @@
-package com.example.miniapp.repositories;
+package scalable.mini_projects.Mini_Project2.repositories;
 
-import com.example.miniapp.models.Rating;
+import scalable.mini_projects.Mini_Project2.models.Rating;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

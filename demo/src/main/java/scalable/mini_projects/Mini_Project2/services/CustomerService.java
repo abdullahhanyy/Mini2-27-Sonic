@@ -1,7 +1,7 @@
-package com.example.miniapp.services;
+package scalable.mini_projects.Mini_Project2.services;
 
-import com.example.miniapp.models.Customer;
-import com.example.miniapp.repositories.CustomerRepository;
+import scalable.mini_projects.Mini_Project2.models.Customer;
+import scalable.mini_projects.Mini_Project2.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

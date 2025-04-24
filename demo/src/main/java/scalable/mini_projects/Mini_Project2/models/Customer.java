@@ -1,4 +1,4 @@
-package com.example.miniapp.models;
+package scalable.mini_projects.Mini_Project2.models;
 
 import jakarta.persistence.*;
 import java.util.List;

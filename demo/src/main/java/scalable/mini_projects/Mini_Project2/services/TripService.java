@@ -1,7 +1,7 @@
-package com.example.miniapp.services;
+package scalable.mini_projects.Mini_Project2.services;
 
-import com.example.miniapp.models.Trip;
-import com.example.miniapp.repositories.TripRepository;
+import scalable.mini_projects.Mini_Project2.models.Trip;
+import scalable.mini_projects.Mini_Project2.repositories.TripRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
