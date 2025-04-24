@@ -1,7 +1,0 @@
-# Class Paths for testing
-# Please change the below paths to the paths of your models (the package name as it will be used in reflection code in the test cases)
-ModelsPath.Captain = scalable.mini_projects.Mini_Project2.models.Captain
-ModelsPath.Customer = scalable.mini_projects.Mini_Project2.models.Customer
-ModelsPath.Payment = scalable.mini_projects.Mini_Project2.models.Payment
-ModelsPath.Rating = scalable.mini_projects.Mini_Project2.models.Rating
-ModelsPath.Trip = scalable.mini_projects.Mini_Project2.models.Trip

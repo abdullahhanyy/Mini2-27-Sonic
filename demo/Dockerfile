@@ -4,7 +4,7 @@ FROM openjdk:25-ea-4-jdk-oraclelinux9
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY target/Task_3-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port 8080 for the Spring Boot application
 EXPOSE 8080
