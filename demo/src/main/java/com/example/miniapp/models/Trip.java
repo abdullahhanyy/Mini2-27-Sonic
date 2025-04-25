@@ -40,6 +40,14 @@ public class Trip {
         this.customer = customer;
     }
 
+    public Trip(LocalDateTime tripDate,String origin,String destination,double tripCost){
+        this.tripDate = tripDate;
+        this.origin = origin;
+        this.destination = destination;
+        this.tripCost = tripCost;
+
+    }
+
     // Full constructor
     public Trip(Long id, LocalDateTime tripDate, String origin, String destination, Double tripCost, Captain captain, Customer customer) {
         this.id = id;

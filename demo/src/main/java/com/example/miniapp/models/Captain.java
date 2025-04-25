@@ -14,7 +14,7 @@ public class Captain {
     private String licenseNumber;
     private Double avgRatingScore;
 
-    @OneToMany(mappedBy = "captain")
+    @OneToMany(mappedBy = "captains")
     private List<Trip> trips;
 
     // Default constructor

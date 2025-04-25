@@ -2,6 +2,7 @@ package com.example.miniapp.models;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.UUID;
 
 import java.time.LocalDateTime;
 
@@ -38,6 +39,15 @@ public class Rating {
         this.comment = comment;
         this.ratingDate = ratingDate;
     }
+
+    public Rating(long entityId,String entityType,int score,String comment,LocalDateTime ratingDate){
+        this.id = UUID.randomUUID().toString();
+        this.entityId = entityId;
+        this.score = score;
+        this.comment = comment;
+        this.ratingDate = ratingDate;
+    }
+
 
     // Getters and Setters
 
