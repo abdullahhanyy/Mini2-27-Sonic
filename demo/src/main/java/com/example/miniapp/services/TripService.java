@@ -51,9 +51,9 @@ public class TripService {
     }
     // Delete Trip
     public void deleteTrip(Long id) {
-        Trip trip = tripRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Trip not found with ID: " + id));
-        tripRepository.delete(trip);  // Deletes the trip from the repository
+        tripRepository.deleteById(id);
+                //.orElseThrow(() -> new RuntimeException("Trip not found with ID: " + id));
+        //tripRepository.delete(trip);  // Deletes the trip from the repository
     }
 
     // Find Trips Within a Date Range

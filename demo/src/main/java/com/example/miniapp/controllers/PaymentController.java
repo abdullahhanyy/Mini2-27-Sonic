@@ -55,8 +55,8 @@ public class PaymentController {
     }
 
     // 9.4.2.7 Get Payments Above Amount Threshold
-    @GetMapping("/aboveAmount/{amount}")
-    public List<Payment> findByAmountThreshold(@PathVariable Double amount) {
-        return paymentService.findByAmountThreshold(amount);
+    @GetMapping("/findByAmountThreshold")
+    public List<Payment> findByAmountThreshold(@RequestParam Double threshold) {
+        return paymentService.findByAmountThreshold(threshold);
     }
 }
