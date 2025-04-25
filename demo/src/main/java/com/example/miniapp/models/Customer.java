@@ -14,7 +14,7 @@ public class Customer {
     private String email;
     private String phoneNumber;
 
-    @OneToMany(mappedBy = "customers")
+    @OneToMany(mappedBy = "customer")
     private List<Trip> trips;
 
     // Default constructor

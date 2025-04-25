@@ -2,6 +2,7 @@ package com.example.miniapp.services;
 
 import com.example.miniapp.models.Captain;
 import com.example.miniapp.repositories.CaptainRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +14,7 @@ public class CaptainService {
     // Dependency Injection
     private final CaptainRepository captainRepository;
 
+    @Autowired
     public CaptainService(CaptainRepository captainRepository) {
         this.captainRepository = captainRepository;
     }

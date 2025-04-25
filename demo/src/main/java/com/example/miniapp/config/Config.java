@@ -1,4 +1,4 @@
-package com.example.mini2;
+package com.example.miniapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

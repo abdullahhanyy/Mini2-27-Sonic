@@ -1,8 +1,9 @@
-package com.example.miniapp.test;
+package com.example.miniapp;
+
 import org.springframework.beans.factory.annotation.Value;
 import com.example.miniapp.models.*;
-import com.example.miniapp.repositories.*;
 import com.example.miniapp.services.*;
+import com.example.miniapp.repositories.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

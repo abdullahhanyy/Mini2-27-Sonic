@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 import java.time.LocalDateTime;
-import java.time.LocalDate;
-import java.time.LocalTime;
 
 @Service
 public class TripService {
