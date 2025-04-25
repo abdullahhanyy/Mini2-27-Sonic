@@ -32,7 +32,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/ridesharing
       SPRING_DATASOURCE_USERNAME: user
       SPRING_DATASOURCE_PASSWORD: password
-      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/yourMongoDb
+      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/ratingsdb?authSource=admin
     depends_on:
       - postgres
       - mongo

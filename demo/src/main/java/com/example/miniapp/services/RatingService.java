@@ -5,9 +5,12 @@ package com.example.miniapp.services;
 import com.example.miniapp.models.Rating;
 import com.example.miniapp.repositories.RatingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class RatingService {
@@ -23,12 +26,33 @@ public class RatingService {
     }
 
     public Rating updateRating(String id, Rating updatedRating) {
-        return ratingRepository.findById(id).map(rating -> {
-            rating.setScore(updatedRating.getScore());
-            rating.setComment(updatedRating.getComment());
-            rating.setRatingDate(updatedRating.getRatingDate());
-            return ratingRepository.save(rating);
-        }).orElse(null);
+//        return ratingRepository.findById(id).map(rating -> {
+//            rating.setScore(updatedRating.getScore());
+//            rating.setComment(updatedRating.getComment());
+//            rating.setRatingDate(updatedRating.getRatingDate());
+//            return ratingRepository.save(rating);
+//        }).orElse(null);
+        if (updatedRating == null) {
+            return null;
+        }
+
+
+        Rating existingRating = ratingRepository.findById(id).orElse(null);
+        if (existingRating == null) {
+            return null; // Rating not found
+        }
+
+
+        if (updatedRating.getScore() != null && updatedRating.getScore() >= 1 && updatedRating.getScore() <= 5) {
+            existingRating.setScore(updatedRating.getScore());
+        }
+        if (updatedRating.getComment() != null) {
+            existingRating.setComment(updatedRating.getComment());
+        }
+
+
+        Rating savedRating = ratingRepository.save(existingRating);
+        return savedRating;
     }
 
     public void deleteRating(String id) {
